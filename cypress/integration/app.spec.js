@@ -22,7 +22,7 @@
 
 describe('TodoMVC', function () {
   // setup these constants to match what TodoMVC does
-  let TODO_ITEM_ONE = 'buy some more cheese'
+  let TODO_ITEM_ONE = 'buy some cheese'
   let TODO_ITEM_TWO = 'feed the cat'
   let TODO_ITEM_THREE = 'book a doctors appointment'
 
@@ -136,7 +136,7 @@ describe('TodoMVC', function () {
       // even though the text content is split across
       // multiple <span> and <strong> elements
       // `cy.contains` can verify this correctly
-      cy.get('.todo-count').contains('30 items left')
+      cy.get('.todo-count').contains('3 items left')
 
       cy.get('@todos')
       .eq(0)
