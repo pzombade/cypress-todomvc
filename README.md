@@ -1,3 +1,5 @@
+[![Cypress Tests](https://github.com/pzombade/cypress-todomvc/actions/workflows/test-app.yml/badge.svg?branch=ci-cd-test)](https://github.com/pzombade/cypress-todomvc/actions/workflows/test-app.yml)
+
 # todomvc
 
 # Installation
