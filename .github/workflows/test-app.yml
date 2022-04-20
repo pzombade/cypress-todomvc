@@ -15,4 +15,4 @@ jobs:
         with:
           build: npm run build
           start: npm start
-          env: password=${{ secrets.UI_USER_NAME }},portx=4222
+          env: password=${{ secrets.UI_PASSWORD }},portx=4222
