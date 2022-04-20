@@ -6,7 +6,7 @@
     "build": "rollup -c",
     "start": "http-server",
     "test": "cypress run",
-    "cypress:open": "cypress open --env user=$UI_USER_NAME,password=$CYPRESS_UI_PASSWORD",
+    "cypress:open": "cypress open",
     "cypress:run": "cypress run",
     "cypress:record": "cypress run --record --key"
   },

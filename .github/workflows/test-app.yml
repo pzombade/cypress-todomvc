@@ -15,4 +15,4 @@ jobs:
         with:
           build: npm run build
           start: npm start
-          env: hostx=api.dev.local,portx=4222
+          env: username=${{ secrets.UI_PASSWORD }},portx=4222
