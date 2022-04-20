@@ -10,6 +10,6 @@ jobs:
       - name: Cypress run with env
         uses: cypress-io/github-action@v2
         with:
-          env: host=api.dev.local,port=4222
+          env: hostx=api.dev.local,portx=4222
 
           
