@@ -49,7 +49,7 @@ describe('TodoMVC', function () {
 
   it.only('Has the header as todos',()=>{
     cy.visit('/');
-    cy.contains(`todos`);
+    cy.contains(`${Cypress.env('user')}`);
   });
 
   afterEach(() => {
