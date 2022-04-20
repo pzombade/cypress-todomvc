@@ -47,6 +47,11 @@ describe('TodoMVC', function () {
     //cy.visit('/')
   })
 
+  it.only('Has the header as todos',()=>{
+    cy.visit('/');
+    cy.contains(`todos`);
+  });
+
   afterEach(() => {
     // In firefox, blur handlers will fire upon navigation if there is an activeElement.
     // Since todos are updated on blur after editing,
