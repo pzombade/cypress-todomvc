@@ -15,3 +15,8 @@ jobs:
         with:
           build: npm run build
           start: npm start
+        env:
+          UI_PASSWORD: ${{ secrets.UI_PASSWORD }}
+          # Recommended: pass the GitHub token lets this action correctly
+          # determine the unique run id necessary to re-run the checks
+          UI_USER_NAME: ${{ secrets.UI_USER_NAME }}

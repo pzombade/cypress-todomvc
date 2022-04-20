@@ -21,12 +21,16 @@
 // ***********************************************
 
 describe('TodoMVC', function () {
+
+  
   // setup these constants to match what TodoMVC does
   let TODO_ITEM_ONE = 'buy some cheese'
   let TODO_ITEM_TWO = 'feed the cat'
   let TODO_ITEM_THREE = 'book a doctors appointment'
 
   beforeEach(function () {
+    cy.log(`user ${JSON.stringify(Cypress.env('user'))}`);
+    cy.log(`password ${JSON.stringify(Cypress.env('password'))}`);
     // By default Cypress will automatically
     // clear the Local Storage prior to each
     // test which ensures no todos carry over
@@ -40,7 +44,7 @@ describe('TodoMVC', function () {
     // which is automatically prepended to cy.visit
     //
     // https://on.cypress.io/api/visit
-    cy.visit('/')
+    //cy.visit('/')
   })
 
   afterEach(() => {
